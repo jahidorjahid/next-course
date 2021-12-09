@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
@@ -32,21 +33,21 @@ const Layout = ({ children }) => {
       {children}
       <Footer></Footer>
       {/* all plugins here */}
-      <script src="/assets/js/jquery.3.6.min.js"></script>
-      <script src="/assets/js/bootstrap.min.js"></script>
-      <script src="/assets/js/imageloded.min.js"></script>
-      <script src="/assets/js/counterup.js"></script>
-      <script src="/assets/js/waypoint.js"></script>
-      <script src="/assets/js/magnific.min.js"></script>
-      <script src="/assets/js/isotope.pkgd.min.js"></script>
-      <script src="/assets/js/nice-select.min.js"></script>
-      <script src="/assets/js/fontawesome.min.js"></script>
-      <script src="/assets/js/ripple.js"></script>
-      <script src="/assets/js/owl.min.js"></script>
-      <script src="/assets/js/slick-slider.min.js"></script>
-      <script src="/assets/js/wow.min.js"></script>
+      <Script src="/assets/js/jquery.3.6.min.js"></Script>
+      <Script src="/assets/js/bootstrap.min.js"></Script>
+      <Script src="/assets/js/imageloded.min.js"></Script>
+      <Script src="/assets/js/counterup.js"></Script>
+      <Script src="/assets/js/waypoint.js"></Script>
+      <Script src="/assets/js/magnific.min.js"></Script>
+      <Script src="/assets/js/isotope.pkgd.min.js"></Script>
+      <Script src="/assets/js/nice-select.min.js"></Script>
+      <Script src="/assets/js/fontawesome.min.js"></Script>
+      <Script src="/assets/js/ripple.js"></Script>
+      <Script src="/assets/js/owl.min.js"></Script>
+      <Script src="/assets/js/slick-slider.min.js"></Script>
+      <Script src="/assets/js/wow.min.js"></Script>
       {/* main js  */}
-      <script src="/assets/js/main.js"></script>
+      <Script src="/assets/js/main.js"></Script>
     </div>
   );
 };

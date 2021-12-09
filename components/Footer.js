@@ -140,7 +140,7 @@ const Footer = () => {
                     <img src="/assets/img/logo.png" alt="img" />
                   </div>
                   <div className="copyright-area">
-                    <p>© 2021 - Themefie. All Rights Reserved</p>
+                    <p>© 2021 - Next Course. All Rights Reserved</p>
                   </div>
                 </div>
               </div>

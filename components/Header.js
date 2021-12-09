@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import React from 'react';
 
 const Header = () => {
@@ -51,9 +52,11 @@ const Header = () => {
               </button>
             </div>
             <div className="logo">
-              <a className="main-logo" href="home.html">
-                <img src="/assets/img/logo.png" alt="img" />
-              </a>
+              <Link className="main-logo" href="/">
+                <a>
+                  <img src="/assets/img/logo.png" alt="img" />
+                </a>
+              </Link>
             </div>
             <div className="nav-right-part nav-right-part-mobile">
               <ul>
@@ -72,22 +75,15 @@ const Header = () => {
                 </button>
               </div>
               <ul className="navbar-nav menu-open text-end">
-                <li className="current-menu-item menu-item-has-children">
-                  <a href="#">Home</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="home.html">Home 01</a>
-                    </li>
-                    <li>
-                      <a href="home-2.html">Home 02</a>
-                    </li>
-                    <li>
-                      <a href="home-3.html">Home 03</a>
-                    </li>
-                    <li>
-                      <a href="home-4.html">Login Home</a>
-                    </li>
-                  </ul>
+                <li className="current-menu-item">
+                  <Link href="/">
+                    <a>Home</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/course">
+                    <a>Browse Course</a>
+                  </Link>
                 </li>
                 <li className="menu-item-has-children">
                   <a href="#">Pages</a>
@@ -157,12 +153,14 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="home-2.html">Log In</a>
+                  <Link href="/signin">
+                    <a>Log In</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="home-2.html" className="btn btn-base-light">
-                    Sign Up
-                  </a>
+                  <Link href="/signup">
+                    <a className="btn btn-base-light">Sign Up</a>
+                  </Link>
                 </li>
               </ul>
             </div>
